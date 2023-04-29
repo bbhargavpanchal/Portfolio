@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		header {
+			background-color: #333;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			position: sticky;
+			top: 0;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			z-index: 999;
+		}
+
+		nav {
+		display: flex;
+		justify-content: center;
+		}
+
+		nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		}
+
+		nav li {
+		margin: 0 10px;
+		}
+
+		nav a {
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+        font-size: 16px;
+		padding: 10px;
+		transition: all 0.3s ease;
+	    }
+
+	    nav a:hover {
+		color: #ccc;
+	    }
+
+		main {
+		margin: 50px auto;
+		max-width: 1080px;
+		padding: 0 20px;
+		text-align: justify;
+		line-height: 1.6;
+		font-size: 18px;
+	    }
+
+		h1, h2 {
+		font-weight: bold;
+		font-weight: bold;
+		font-size: 36px;
+		margin: 40px 0 20px;
+		}
+
+		p {
+		margin-bottom: 20px;
+	     }
+
+	    ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	    }
+
+	    li {
+		margin-bottom: 30px;
+		border-bottom: 2px solid #ccc;
+		padding-bottom: 1px;
+	    }
+
+	    li h2 {
+		font-size: 24px;
+		margin: 0 0 10px;
+		color: #333;
+	    }
+
+	    li p {
+		color: #666;
+		font-size: 18px;
+		line-height: 1.6;
+		margin: 0 0 20px;
+	    }
+
+	    li p a {
+		color: #333;
+		font-weight: bold;
+		text-decoration: none;
+		transition: color 0.3s;
+	    }
+
+	    li p a:hover {
+		color: #ccc;
+	    }
+
+		.header {
+		position: sticky;
+		top: 0;
+		right: 0;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		background-color: #f8f8f8;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.header__photo {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		margin-right: 10px;
+		object-fit: cover;
+		}
+
+		.header__name {
+		font-size: 18px;
+		font-weight: bold;
+		margin: 0;
+		text-align: right;
+		}
+
+		footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		background-color: #333;
+		color: white;
+		padding: 0.75px;
+		}
+	</style>
+</head>
+<body>
+	<header class="d-flex justify-content-between align-items-center py-2">
+	<a href="/about">
+	  <div class="d-flex align-items-center">
+		<img src="/static/home.jpg" alt="Bhargav Panchal" class="header__photo" />
+		<h1 class="header__name">Bhargav Panchal</h1>
+	   </div>
+	</a>
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/portfolio">Portfolio</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+	<main>
+		<h1>Portfolio</h1>
+		<p>Here are some examples of my recent work:</p>
+		<ul>
+		<li>
+			<h2>Stock Market Price Prediction</h2>
+			<p>This project uses yfinance to predict live stock prices. I utilized HTML, CSS, Bootstrap for the frontend and Python, JSON, and machine learning concepts for the backend. The project aims to provide accurate stock price predictions to the user.</p>
+			<p><a href="#">View Project</a></p>
+		</li>
+		<li>
+			<h2>House Price Prediction</h2>
+			<p>This project predicts house prices based on the location, number of bedrooms, bathrooms, and square footage. It is designed to help real estate agents and homeowners get an accurate estimate of a property's value. The frontend was created using HTML, CSS, and Bootstrap, and the backend was developed using Python.</p>
+			<p><a href="#">View Project</a></p>
+		</li>
+		<li>
+			<h2>Recommendation System</h2>
+			<p>This project was designed to help customers make informed purchase decisions. It shows the best purchases made by a particular customer based on their purchase history. The user inputs the date and customer ID, and the system generates recommendations. HTML, CSS, and Bootstrap were used for the frontend, while the backend was developed using Python.</p>
+			<p><a href="#">View Project</a></p>
+		</li>
+		<li>
+			<h2>Computer Vision Text Recognizer</h2>
+			<p>This project is a computer vision text recognizer that converts handwritten text to digital text. It uses morphology for better accuracy. The frontend was created using HTML, CSS, and Bootstrap, while the backend was developed using Python.</p>
+			<p><a href="#">View Project</a></p>
+		</li>
+		<li>
+			<h2>Computer Vision Item Counter</h2>
+			<p>This project is a computer vision item counter that counts the number of items in given freezer images. It detects and locates all the compartments of the refrigerator using computer vision techniques and then counts the items. The user inputs the path to the image, and the program counts and displays the information about the number of items in the image. The frontend was created using HTML, CSS, and Bootstrap, while the backend was developed using Python.</p>
+			<p><a href="#">View Project</a></p>
+		</li>
+	</ul><br><br><br>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 @bbhargavpanchal</p>
+	</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
