@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		header {
+		background-color: #333;
+		color: white;
+		padding: 10px;
+		text-align: center;
+		}
+
+		nav {
+		display: flex;
+		justify-content: center;
+		}
+
+		nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		}
+
+		nav li {
+		margin: 0 10px;
+		}
+
+		nav a {
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+        font-size: 16px;
+		padding: 10px;
+		transition: all 0.3s ease;
+		}
+
+		main {
+		margin: 50px auto;
+		max-width: 1080px;
+		padding: 0 20px;
+		text-align: center;
+		line-height: 1.6;
+		font-size: 18px;
+		}
+
+		h1, h2 {
+		font-weight: bold;
+		}
+
+		.header {
+		position: sticky;
+		top: 0;
+		right: 0;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		background-color: #f8f8f8;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.header__photo {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		margin-right: 10px;
+		object-fit: cover;
+		}
+
+		.header__name {
+		font-size: 18px;
+		font-weight: bold;
+		margin: 0;
+		text-align: right;
+		}
+
+		footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		background-color: #333;
+		color: white;
+		padding: 0.75px;
+		}
+	</style>
+</head>
+<body>
+  <header class="d-flex justify-content-between align-items-center py-2">
+	<a href="/about">
+	  <div class="d-flex align-items-center">
+		<img src="/static/home.jpg" alt="Bhargav Panchal" class="header__photo" />
+		<h1 class="header__name">Bhargav Panchal</h1>
+	   </div>
+	</a>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/portfolio">Portfolio</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+<main>
+	<h1>Welcome To My Portfolio Website!!!!</h1><br><br>
+	<h2>My name is Bhargav Panchal,</h2><br>
+	<p>I am a computer engineering student currently pursuing my degree at SVIT, Vasad (Gujarat Technological University).</p>
+	<p>On this website, you can find some of my work and experience related content in the about, portfolio, and contact sections. I am passionate about computer engineering and am always looking for new opportunities to learn and grow. </p>
+	<p>I am eager to work in the IT industry and apply my knowledge to technical projects. My goal is to excel in the computer engineering industry and make a positive impact through my work.</p><br>
+	<p>Thank you for visiting my website, and please feel free to contact me if you have any questions or would like to discuss potential collaboration opportunities.</p>
+</main>
+<footer>
+		<p>&copy; 2023 @bbhargavpanchal</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
