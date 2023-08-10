@@ -87,10 +87,10 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/images/home.jpeg') no-repeat; /*add image*/
+    background: url('https://github.com/bbhargavpanchal/Portfolio/blob/8089703c88f703464ff925cbe898d04eb95f4a0c/images/home.jpeg') no-repeat; /* Use "raw" link */
     background-position: center;
-
 }
+
 
 .home-content {
     max-width: 60rem;
