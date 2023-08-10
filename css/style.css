@@ -880,18 +880,6 @@ section:nth-child(odd) .animate.scroll,
     width: 0;
 }
 
-@media (max-width: 1600px){
-    html{
-        font-size:78%;
-    }
- }
-
-@media (max-width: 1400px){
-    html{
-        font-size:65%;
-    }
- }
-
  @media (max-width: 1200px){
     html{
         font-size:55%;
