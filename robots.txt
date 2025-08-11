@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Sitemap: https://bbhargavpanchal.github.io/Portfolio/sitemap.xml
+
+# Allow search engines to crawl all content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block any potential admin or private directories (if you add them later)
+User-agent: *
+Disallow: /private/
+Disallow: /admin/

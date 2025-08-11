@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="404 Error - Page Not Found | Bhargav Panchal Portfolio">
+    <meta name="author" content="Bhargav Panchal">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="404 - Page Not Found | Bhargav Panchal">
+    <meta property="og:description" content="The page you're looking for doesn't exist">
+    <meta property="og:type" content="website">
+
+    <title>404 - Page Not Found | Bhargav Panchal</title>
+
+    <!-- Import Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #112e42 0%, #081b29 100%);
+            color: #ededed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            z-index: 10;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .error-code {
+            font-size: clamp(80px, 15vw, 150px);
+            font-weight: 800;
+            background: linear-gradient(135deg, #00abf0 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+            filter: drop-shadow(0 0 30px rgba(0, 171, 240, 0.3));
+        }
+
+        h1 {
+            font-size: clamp(24px, 5vw, 36px);
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        p {
+            font-size: clamp(16px, 3vw, 18px);
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #00abf0;
+            color: #081b29;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: 2px solid #00abf0;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.6s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: #00abf0;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 171, 240, 0.3);
+        }
+
+        .decoration {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(0, 171, 240, 0.1);
+            animation: float 20s infinite;
+            filter: blur(1px);
+        }
+
+        .circle:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            left: 10%;
+            top: 20%;
+            animation-duration: 8s;
+        }
+
+        .circle:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            right: 10%;
+            top: 20%;
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+
+        .circle:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            left: 30%;
+            bottom: 20%;
+            animation-duration: 10s;
+            animation-delay: 4s;
+        }
+
+        .circle:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            right: 30%;
+            bottom: 30%;
+            animation-duration: 15s;
+            animation-delay: 1s;
+        }
+
+        .circle:nth-child(5) {
+            width: 40px;
+            height: 40px;
+            left: 50%;
+            top: 50%;
+            animation-duration: 7s;
+            animation-delay: 3s;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+                opacity: 0.1;
+            }
+            33% {
+                transform: translateY(-30px) translateX(30px) rotate(120deg);
+                opacity: 0.15;
+            }
+            66% {
+                transform: translateY(30px) translateX(-30px) rotate(240deg);
+                opacity: 0.1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .countdown {
+            font-size: 14px;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        #counter {
+            color: #00abf0;
+            font-weight: 600;
+        }
+
+        /* Glitch effect for 404 */
+        @keyframes glitch {
+            0%, 100% {
+                text-shadow:
+                    2px 0 #ff00ff,
+                    -2px 0 #00ffff;
+            }
+            25% {
+                text-shadow:
+                    -2px 0 #ff00ff,
+                    2px 0 #00ffff;
+            }
+            50% {
+                text-shadow:
+                    2px 0 #00ffff,
+                    -2px 0 #ff00ff;
+            }
+        }
+
+        .error-code:hover {
+            animation: glitch 0.3s infinite, pulse 2s ease-in-out infinite;
+        }
+
+        /* Loading bar for countdown */
+        .progress-bar {
+            width: 200px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            margin: 20px auto 0;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 1s;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00abf0 0%, #00d4ff 100%);
+            border-radius: 2px;
+            animation: countdown-progress 10s linear;
+            box-shadow: 0 0 10px rgba(0, 171, 240, 0.5);
+        }
+
+        @keyframes countdown-progress {
+            from {
+                width: 100%;
+            }
+            to {
+                width: 0%;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .circle {
+                opacity: 0.05;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
+        }
+
+        /* Keyboard navigation */
+        .btn:focus {
+            outline: 2px solid #00abf0;
+            outline-offset: 4px;
+        }
+
+        /* Prevent text selection for better UX */
+        .error-code {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="decoration">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1>Oops! Page Not Found</h1>
+        <p>The page you're looking for doesn't exist or has been moved.</p>
+        <a href="index.html" class="btn" id="homeBtn">Go Back Home</a>
+        <div class="countdown">Redirecting to homepage in <span id="counter">10</span> seconds...</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <script>
+        // Auto redirect after 10 seconds
+        let count = 10;
+        const counter = document.getElementById('counter');
+        const homeBtn = document.getElementById('homeBtn');
+        let countdown;
+
+        function startCountdown() {
+            countdown = setInterval(() => {
+                count--;
+                if (counter) {
+                    counter.textContent = count;
+                }
+
+                if (count <= 0) {
+                    clearInterval(countdown);
+                    window.location.href = 'index.html';
+                }
+            }, 1000);
+        }
+
+        // Start countdown
+        startCountdown();
+
+        // Stop countdown if user clicks anywhere
+        document.addEventListener('click', (e) => {
+            // Don't stop if clicking the home button
+            if (e.target !== homeBtn && !homeBtn.contains(e.target)) {
+                clearInterval(countdown);
+                // Update message
+                const countdownDiv = document.querySelector('.countdown');
+                if (countdownDiv) {
+                    countdownDiv.textContent = 'Auto-redirect cancelled';
+                    countdownDiv.style.color = '#00abf0';
+                }
+                // Stop progress bar animation
+                const progressFill = document.querySelector('.progress-fill');
+                if (progressFill) {
+                    progressFill.style.animationPlayState = 'paused';
+                }
+            }
+        });
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                window.location.href = 'index.html';
+            }
+            if (e.key === 'Escape') {
+                clearInterval(countdown);
+                const countdownDiv = document.querySelector('.countdown');
+                if (countdownDiv) {
+                    countdownDiv.textContent = 'Auto-redirect cancelled';
+                    countdownDiv.style.color = '#00abf0';
+                }
+            }
+        });
+
+        // Check if coming from a broken link and log it (optional)
+        if (document.referrer) {
+            console.log('User came from:', document.referrer);
+        }
+
+        // Optional: Send 404 errors to analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', '404_error', {
+                'page_location': window.location.href,
+                'page_referrer': document.referrer
+            });
+        }
+    </script>
+</body>
+</html>
