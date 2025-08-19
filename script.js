@@ -252,7 +252,7 @@ function handleScroll() {
 window.addEventListener('scroll', throttledScroll);
 
 // FIX: Typing Animation with Memory Leak Prevention
-const professionTexts = ['Computer Engineer', 'AI/ML Engineer', 'Deep Learning Expert', 'Software Developer'];
+const professionTexts = ['Computer Engineer', 'AI/ML Engineer', 'Deep Learning Expert', 'Software Developer', 'Python Developer'];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -662,9 +662,9 @@ function initializeObservers() {
 
     // Contact Stats Animation
     const contactStats = [
-        { id: 'projectCount', value: 15, duration: 2000 },
+        { id: 'projectCount', value: 17, duration: 2000 },
         { id: 'coffeeCount', value: 515, duration: 2500 },
-        { id: 'codeLines', value: 515151, duration: 3000 }
+        { id: 'codeLines', value: 151515, duration: 3000 }
     ];
 
     const contactSection = document.querySelector('.contact');
@@ -772,7 +772,7 @@ if (downloadCV) {
         }, 3000);
 
         // Add actual download link here
-        window.open('https://drive.google.com/file/d/1m3cGP_CMBYMqP0kOKR3zG10IqWAlzFon/view', '_blank');
+        window.open('https://docs.google.com/document/d/15DpzirV5Ig3e9UbU5D2c5h8_zr1O4R95/edit?usp=sharing&ouid=101501882236629086698&rtpof=true&sd=true', '_blank');
 
 //         window.location.href = 'https://drive.google.com/file/d/1m3cGP_CMBYMqP0kOKR3zG10IqWAlzFon/view';
 
